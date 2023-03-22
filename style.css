@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( 135deg, rgb(6 18 255), rgb(255 0 0) );
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  height: 80vh;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  height: 32rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.6);
+}
+
+.row input {
+  width: 17.547rem;
+  height: 4.398rem;
+  border-radius: 1rem;
+  padding: 3rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.604);
+  margin-bottom: 1rem;
+  background: transparent;
+  font-weight: bold;
+  font-size: 2.8rem;
+  text-align: right;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+::placeholder{
+  color: white;
+  font-size: 2.8rem;
+}
+ .row button {
+  height: 4rem;
+  width: 4rem;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  margin: 0.2rem;
+  margin-inline: 0.1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 0.15rem solid rgba(255, 255, 255, 0.504);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+/* To make responsive using media queries */
+
+
+
+/* for medium size mobiles */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  html {
+    font-size: 80%;
+  }
+  .container{
+    width: 32rem;
+    height: 34rem;
+   }
+   .calculator{
+    width: 20rem;
+    height: 34rem;
+   }
+
+}
+/* for larze size mobiles */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  html {
+    font-size: 80%;
+  }
+  .container{
+    width: 32rem;
+    height: 34rem;
+   }
+   .calculator{
+    width: 20rem;
+    height: 32rem;
+   }
+
+ 
+
+}
+
+/* For small size mobiles */
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 70%;
+  }
+  .container{
+    width: 32rem;
+    height: 34rem;
+   }
+   .calculator{
+    width: 20rem;
+    height: 34rem;
+   }
+}
+
+/* for forlarge tv*/
+@media only screen and (min-width: 2560px) {
+  html {
+    font-size: 190%;
+  }
+
+
+ 
+}
+/* for tv and desktop */
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+  html {
+    font-size: 170%;
+  }
+  .container{
+    height: 34rem;
+    width: 34rem;
+  }
+  .calculator{
+    width: 22rem;
+    height: 34rem;
+  }
+
+
+}
+/* for larze laptops  */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  html {
+    font-size: 100%;
+  }
+   .container{
+    width: 34rem;
+    height: 34rem;
+   }
+   .calculator{
+    width: 22rem;
+    height: 34rem;
+   }
+
+}
+
+
+/* for laptops  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+  .container{
+    width: 32rem;
+    height: 34rem;
+   }
+   .calculator{
+    width: 20rem;
+    height: 34rem;
+   }
+
+
+
+}
+
+/* for tablets */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  .container{
+    width: 32rem;
+    height: 34rem;
+   }
+   .calculator{
+    width: 20rem;
+    height: 34rem;
+   }
+
+
+
+  } 
